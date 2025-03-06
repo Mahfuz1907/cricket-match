@@ -8,174 +8,177 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="px-10 py-20"> 
+    <!-- Team and player name -->
     <div class="team-name grid grid-cols-4 gap-4">
         <!-- India team -->
         <button id="ind" class="px-4 py-3 rounded-xl text-white font-bold text-xl bg-[#35CAFE]">India
-            <ul class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#35CAFE] flex flex-col gap-2">
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Rohit Sharma (c)</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Shreyas Iyer (vc)</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Rishabh Pant (wk)</li> 
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">KL Rahul (wk)</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Shubman Gill</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Virat Kohli</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Yashasbhi Jaisual</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Axar Patel</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Hardik Pandya</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Ravindra Jadeja</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Jasprit Bumrah</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Mohammad Shami</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Kuldeep Yadav</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Mohammad Siraj</li>
-                <li class="border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Arshdeep Singh</li>
+            <ul id="player-name-ind" class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#35CAFE] flex flex-col gap-2">
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Rohit Sharma (c)</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Shreyas Iyer (vc)</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Rishabh Pant (wk)</li> 
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">KL Rahul (wk)</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Shubman Gill</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Virat Kohli</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Yashasbhi Jaisual</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Axar Patel</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Hardik Pandya</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Ravindra Jadeja</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Jasprit Bumrah</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Mohammad Shami</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Kuldeep Yadav</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Mohammad Siraj</li>
+                <li class="player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white">Arshdeep Singh</li>
             </ul>
         </button>
          <!-- South Africa Team -->
         <button id="sa" class="px-4 py-3 rounded-xl text-white font-bold text-xl bg-[#38761d]">South Africa
-            <ul class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#38761d] flex flex-col gap-2">
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Temba Bavuma (c)</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Aiden Markram (vc)</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Heinrich Klassen (wk)</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Ryan Rickelton (wk)</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Rassie van der Dussen</li> 
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">David Miller</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Tristan Stubbs</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Marco Jansen</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Wiaan Mulder</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Keshav Maharaj</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Kagiso Rabada</li> 
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Lungi Ngidi</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Tabraiz Shamsi</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Tony de Zorzi</li>
-                <li class="border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Corbin Bosch</li>
+            <ul id="player-name-sa" class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#38761d] flex flex-col gap-2">
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Temba Bavuma (c)</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Aiden Markram (vc)</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Heinrich Klassen (wk)</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Ryan Rickelton (wk)</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Rassie van der Dussen</li> 
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">David Miller</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Tristan Stubbs</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Marco Jansen</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Wiaan Mulder</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Keshav Maharaj</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Kagiso Rabada</li> 
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Lungi Ngidi</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Tabraiz Shamsi</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Tony de Zorzi</li>
+                <li class="player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white">Corbin Bosch</li>
             </ul>
         </button>
         <!-- Australia Team -->
         <button id="aus" class="px-4 py-3 rounded-xl text-white font-bold text-xl bg-[#FFCD00]">Australia
-            <ul class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#FFCD00] flex flex-col gap-2">
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Pat Cummins (c)</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Steven Smith (vc)</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Josh Inglish (wk)</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Alex Carey (wk)</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Travis Head</li> 
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Mathew Short</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Marnus Labuschagne</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Jake Fraser-McGurk</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Glenn Maxewell</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Marcus Stoinis</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Mitchell Starc</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Josh Hazlewood</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Adam Zampa</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Nathan Ellis</li>
-                <li class="border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Tanveer Sangha</li>
+            <ul id="player-name-aus" class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#FFCD00] flex flex-col gap-2">
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Pat Cummins (c)</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Steven Smith (vc)</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Josh Inglish (wk)</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Alex Carey (wk)</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Travis Head</li> 
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Mathew Short</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Marnus Labuschagne</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Jake Fraser-McGurk</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Glenn Maxewell</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Marcus Stoinis</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Mitchell Starc</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Josh Hazlewood</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Adam Zampa</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Nathan Ellis</li>
+                <li class="player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white">Tanveer Sangha</li>
             </ul>
         </button>
         <!-- New Zealand Team -->
         <button id="nz" class="px-4 py-3 rounded-xl text-white font-bold text-xl bg-[#000000]">New Zealand
-            <ul class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#000000] flex flex-col gap-2">
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Mitchell Santner (c)</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Tom Latham (vc) (wk)</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Devon Conway (wk)</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Will Young</li> 
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Rachin Ravindra</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Kane Williamson</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Daryl Mitchell</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Glen Phillips</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Michael Bracewell</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Kyle Jamieson</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Jimmy Neesham</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Ish Sodi</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Matt Henry</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Jacob Duffy</li>
-                <li class="border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Lukie Ferguson</li>
+            <ul id="player-name-nz" class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#000000] flex flex-col gap-2">
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white""1">Mitchell Santner (c)</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Tom Latham (vc) (wk)</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Devon Conway (wk)</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Will Young</li> 
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Rachin Ravindra</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Kane Williamson</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Daryl Mitchell</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Glen Phillips</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Michael Bracewell</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Kyle Jamieson</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Jimmy Neesham</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Ish Sodi</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Matt Henry</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Jacob Duffy</li>
+                <li class="player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white">Lukie Ferguson</li>
             </ul>
         </button>
         <!-- Pakistan Team -->
         <button id="pak" class="px-4 py-3 rounded-xl text-white font-bold text-xl bg-[#00ff00]">Pakistan
-            <ul class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#00ff00] flex flex-col gap-2">
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Mohammad Rizwan (c) (wk)</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Salman Ali Agha (vc)</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Fakhar Zaman</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Saim Ayub</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Babar Azam</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Abdullah Shafique</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Shadab Khan</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Irfan Niazi</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Aamer Jamal</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Shaheen Afridi</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Naseem Shah</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Haris Rauf</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Abrar Ahmed</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Mohammad Hasnain</li>
-                <li class="border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Sufiyan Muqeem</li>
+            <ul id="player-name-pak" class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#00ff00] flex flex-col gap-2">
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Mohammad Rizwan (c) (wk)</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Salman Ali Agha (vc)</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Fakhar Zaman</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Saim Ayub</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Babar Azam</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Abdullah Shafique</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Shadab Khan</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Irfan Niazi</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Aamer Jamal</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Shaheen Afridi</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Naseem Shah</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Haris Rauf</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Abrar Ahmed</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Mohammad Hasnain</li>
+                <li class="player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white">Sufiyan Muqeem</li>
             </ul>
         </button>
         <!-- Afghanistan Team -->
         <button id="afg" class="px-4 py-3 rounded-xl text-white font-bold text-xl bg-[#3d85c6]">Afghanistan
-            <ul class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#3d85c6] flex flex-col gap-2">
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Hasmatullah Sahidi (c)</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Rashid Khan (vc)</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Rahmanullah Gurbaz (wk)</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Ikram Alikhil (wk)</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Ibrahim Zadran</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Sediqullah Atal</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Rahmat Shah</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Azmatullah Omarzai</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Mohammad Nabi</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Gulbadin Naib</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Noor Ahmed</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Fazlehaq Farooqi</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Naveen ul Haque</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">AM Ghazanfar</li>
-                <li class="border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Nangeyalia Kharote</li>
+            <ul id="player-name-afg" class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#3d85c6] flex flex-col gap-2">
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Hasmatullah Sahidi (c)</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Rashid Khan (vc)</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Rahmanullah Gurbaz (wk)</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Ikram Alikhil (wk)</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Ibrahim Zadran</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Sediqullah Atal</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Rahmat Shah</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Azmatullah Omarzai</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Mohammad Nabi</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Gulbadin Naib</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Noor Ahmed</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Fazlehaq Farooqi</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Naveen ul Haque</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">AM Ghazanfar</li>
+                <li class="player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white">Nangeyalia Kharote</li>
             </ul>
         </button>
         <!-- England Team  -->
         <button id="eng" class="px-4 py-3 rounded-xl text-white font-bold text-xl bg-[#4a86e8]">England
-            <ul class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#4a86e8] flex flex-col gap-2">
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Jos Buttler (c) (wk)</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Ben Duckett (vc)</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Jamie Smith (wk)</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Philip Salt</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Joe Root</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Harry Brook</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Liam Livingstone</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Jamie Overton</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Jofra Archer</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Mark Wood</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Adil Rashid</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Tom Banton</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Gus Atkinson</li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Saqib Mahmood </li>
-                <li class="border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Rehan Ahmed</li>
+            <ul id="player-name-eng" class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#4a86e8] flex flex-col gap-2">
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Jos Buttler (c) (wk)</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Ben Duckett (vc)</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Jamie Smith (wk)</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Philip Salt</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Joe Root</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Harry Brook</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Liam Livingstone</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Jamie Overton</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Jofra Archer</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Mark Wood</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Adil Rashid</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Tom Banton</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Gus Atkinson</li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Saqib Mahmood </li>
+                <li class="player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white">Rehan Ahmed</li>
             </ul>
         </button>
         <!-- Bangladesh Team -->
         <button id="ban" class="px-4 py-3 rounded-xl text-white font-bold text-xl bg-[#274e13]">Bangladesh
-            <ul class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#274e13] flex flex-col gap-2">
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Najmul Hossain Shanto (c)</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Mehidy Hasan Miraz (vc)</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Mushfiqur Rahim (wk)</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Litton Das (wk)</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Jaker Ali (wk)</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Tanzid Tamim</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Towhid Hridoy</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Mahmudullah Reyad</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Rishad Hossain</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Tanzim Hasan Sakib</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Taskin Ahmed</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Mustafizur Rahman </li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Nahid Rana</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Ebadot Hossain</li>
-                <li class="border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Hassan Mahmud</li>
+            <ul id="player-name-ban" class="bg-white text-black text-xl font-normal p-3 my-3 rounded-xl border border-[#274e13] flex flex-col gap-2">
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Najmul Hossain Shanto (c)</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Mehidy Hasan Miraz (vc)</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Mushfiqur Rahim (wk)</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Litton Das (wk)</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Jaker Ali (wk)</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Tanzid Tamim</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Towhid Hridoy</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Mahmudullah Reyad</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Rishad Hossain</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Tanzim Hasan Sakib</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Taskin Ahmed</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Mustafizur Rahman </li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Nahid Rana</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Ebadot Hossain</li>
+                <li class="player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white">Hassan Mahmud</li>
             </ul>
         </button> 
     </div>
 
+    <!-- start the match button -->
     <div class="start mt-20 flex justify-center items-center" id="start-the-match">
         <button id="start" class="px-7 py-3 cursor-pointer  text-xl font-normal border-3  rounded-xl ">Start The Match</button>
     </div>
 
 
+    <!-- selecting match teams -->
     <div class="match mt-20 grid grid-cols-2 justify-center items-center" id="match-team">
         <div class="your-team flex flex-col gap-5 justify-center items-center" id="your-match-team">
             <h1 class="text-2xl text-black font-bold">Your Team</h1>
@@ -205,6 +208,8 @@
         </div>
     </div>
 
+
+    <!-- selecting squads -->
     <div class="squads grid grid-cols-2 justify-center items-center gap-20 mt-20" id="match-squad">
         <div class="flex flex-col justify-center items-center gap-5" id="your-match-squad">
             <h1 class="text-2xl text-black font-bold">Your Team</h1>
@@ -219,11 +224,13 @@
     </div>
 
 
+    <!-- select squad button -->
     <div class="select-squad-div mt-20 flex justify-center items-center" id="select-squad-div">
-        <button id="select-squad" class="px-7 py-3 cursor-pointer  text-xl font-normal border-3  rounded-xl">Select Your Squad</button>
+        <button id="select-squad" class="px-7 py-3 cursor-pointer  text-xl font-normal border-3  rounded-xl">Select Squad</button>
     </div>
 
 
+    <!-- current match table -->
     <div class="current-match mt-20 flex flex-col justify-center items-center gap-10" id="match-table">
         <div class="your-team flex flex-col justify-center items-center">
             <h1 class="text-2xl text-black font-bold">Your Team</h1>
@@ -554,6 +561,7 @@
     </div>
 
 
+    <!-- result of the match -->
     <h1 id="match-result" class="mt-30 text-6xl font-black text-center text-black border-3 border-black bg-white px-10 py-7 rounded-xl">Pakistan have won the match by 50 runs</h1>
     
     
