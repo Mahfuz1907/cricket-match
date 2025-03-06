@@ -1,16 +1,35 @@
-        let indianPlayer = [];
-        let southAfricanPlayer = [];
-        let australianPlayer = [];
-        let newZealandPlayer = [];
-        let pakistanPlayer = [];
-        let afghanPlayer = [];
-        let englandPlayer = [];
-        let bangladeshPlayer = [];    
+let indianPlayer = [];
+let southAfricanPlayer = [];
+let australianPlayer = [];
+let newZealandPlayer = [];
+let pakistanPlayer = [];
+let afghanPlayer = [];
+let englandPlayer = [];
+let bangladeshPlayer = [];    
+
+
+let isYourIndClicked = false;
+let isYourSAClicked = false;
+let isYourAusClicked = false;
+let isYourNZClicked = false;
+let isYourPakClicked = false;
+let isYourAfgClicked = false;
+let isYourEngClicked = false;
+let isYourBanClicked = false;
+let isOppoIndClicked = false;
+let isOppoSAClicked = false;
+let isOppoAusClicked = false;
+let isOppoNZClicked = false;
+let isOppoPakClicked = false;
+let isOppoAfgClicked = false;
+let isOppoEngClicked = false;
+let isOppoBanClicked = false;
 //selecting your squad
 let yourTeam = '#';
 
 document.getElementById('your-ind').addEventListener("click", 
     function(){
+        isYourIndClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let ind = document.getElementsByClassName('player-name-ind');
         for(let i=0; i < ind.length; i++){
@@ -42,6 +61,7 @@ document.getElementById('your-ind').addEventListener("click",
 
 document.getElementById('your-sa').addEventListener("click", 
     function(){
+        isYourSAClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let sa = document.getElementsByClassName('player-name-sa');
         for(let i=0; i < sa.length; i++){
@@ -75,6 +95,7 @@ document.getElementById('your-sa').addEventListener("click",
 
 document.getElementById('your-aus').addEventListener("click", 
     function(){
+        isYourAusClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let aus = document.getElementsByClassName('player-name-aus');
         for(let i=0; i < aus.length; i++){
@@ -108,6 +129,7 @@ document.getElementById('your-aus').addEventListener("click",
 
 document.getElementById('your-nz').addEventListener("click", 
     function(){
+        isYourNZClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let nz = document.getElementsByClassName('player-name-nz');
         for(let i=0; i < nz.length; i++){
@@ -141,6 +163,7 @@ document.getElementById('your-nz').addEventListener("click",
 
 document.getElementById('your-pak').addEventListener("click", 
     function(){
+        isYourPakClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let pak = document.getElementsByClassName('player-name-pak');
         for(let i=0; i < pak.length; i++){
@@ -175,6 +198,7 @@ document.getElementById('your-pak').addEventListener("click",
 
 document.getElementById('your-afg').addEventListener("click", 
     function(){
+        isYourAfgClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let afg = document.getElementsByClassName('player-name-afg');
         for(let i=0; i < afg.length; i++){
@@ -209,6 +233,7 @@ document.getElementById('your-afg').addEventListener("click",
 
 document.getElementById('your-eng').addEventListener("click", 
     function(){
+        isYourEngClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let eng = document.getElementsByClassName('player-name-eng');
         for(let i=0; i < eng.length; i++){
@@ -243,6 +268,7 @@ document.getElementById('your-eng').addEventListener("click",
 
 document.getElementById('your-ban').addEventListener("click", 
     function(){
+        isYourBanClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let ban = document.getElementsByClassName('player-name-ban');
         for(let i=0; i < ban.length; i++){
@@ -283,6 +309,7 @@ document.getElementById('your-ban').addEventListener("click",
 let oppoTeam = '*';
 document.getElementById('oppo-ind').addEventListener("click", 
     function(){
+        isOppoIndClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let ind = document.getElementsByClassName('player-name-ind');
         for(let i=0; i < ind.length; i++){
@@ -321,6 +348,7 @@ document.getElementById('oppo-ind').addEventListener("click",
 
 document.getElementById('oppo-sa').addEventListener("click", 
     function(){
+        isOppoSAClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let sa = document.getElementsByClassName('player-name-sa');
         for(let i=0; i < sa.length; i++){
@@ -360,6 +388,7 @@ document.getElementById('oppo-sa').addEventListener("click",
 
 document.getElementById('oppo-aus').addEventListener("click", 
     function(){
+        isOppoAusClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let aus = document.getElementsByClassName('player-name-aus');
         for(let i=0; i < aus.length; i++){
@@ -400,6 +429,7 @@ document.getElementById('oppo-aus').addEventListener("click",
 
 document.getElementById('oppo-nz').addEventListener("click", 
     function(){
+        isOppoNZClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let nz = document.getElementsByClassName('player-name-nz');
         for(let i=0; i < nz.length; i++){
@@ -440,6 +470,7 @@ document.getElementById('oppo-nz').addEventListener("click",
 
 document.getElementById('oppo-pak').addEventListener("click", 
     function(){
+        isOppoPakClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let pak = document.getElementsByClassName('player-name-pak');
         for(let i=0; i < pak.length; i++){
@@ -481,6 +512,7 @@ document.getElementById('oppo-pak').addEventListener("click",
 
 document.getElementById('oppo-afg').addEventListener("click", 
     function(){
+        isOppoAfgClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let afg = document.getElementsByClassName('player-name-afg');
         for(let i=0; i < afg.length; i++){
@@ -522,6 +554,7 @@ document.getElementById('oppo-afg').addEventListener("click",
 
 document.getElementById('oppo-eng').addEventListener("click", 
     function(){
+        isOppoEngClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let eng = document.getElementsByClassName('player-name-eng');
         for(let i=0; i < eng.length; i++){
@@ -563,6 +596,7 @@ document.getElementById('oppo-eng').addEventListener("click",
 
 document.getElementById('oppo-ban').addEventListener("click", 
     function(){
+        isOppoBanClicked = true;
         document.getElementById('match-squad').style.display = 'grid';
         let ban = document.getElementsByClassName('player-name-ban');
         for(let i=0; i < ban.length; i++){
