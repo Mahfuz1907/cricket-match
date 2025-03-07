@@ -41,6 +41,7 @@ document.getElementById('start').addEventListener("click",
         document.getElementById('match-team').style.display = 'grid';
         document.getElementById('oppo-match-team').style.display = 'none';
         document.getElementById('start-the-match').style.display = 'none';
+        document.getElementById('team-name').style.display = 'none';
     }) 
 
 
