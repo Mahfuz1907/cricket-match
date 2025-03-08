@@ -6,6 +6,7 @@ document.getElementById('select-squad').addEventListener("click",
         document.getElementById('match-table').style.display = 'flex';
         document.getElementById('squad-selected-your').style.display = 'flex';
         document.getElementById('squad-selected-oppo').style.display = 'flex';
+        document.getElementById('match-team').style.display = 'none';
         
         for(let i=0; i < 15; i++){
 
@@ -146,6 +147,8 @@ document.getElementById('select-squad').addEventListener("click",
                     function(){
                         document.getElementById(`your-team-table-element-${i}`).children[0].innerHTML = pakistanPlayer2[i];
                         document.getElementById('squad-selected-your').style.display = 'none';
+                        document.getElementById('your-squad-array').innerHTML = [...pakistanPlayer2];
+                        document.getElementById('your-squad').style.display = 'none';
                     }
                 )
             }
@@ -158,6 +161,8 @@ document.getElementById('select-squad').addEventListener("click",
                     function(){
                         document.getElementById(`oppo-team-table-element-${i}`).children[0].innerHTML = newZealandPlayer2[i];
                         document.getElementById('squad-selected-oppo').style.display = 'none';
+                        document.getElementById('oppo-squad-array').innerHTML = [...newZealandPlayer2];
+                        document.getElementById('oppo-squad').style.display = 'none';
                     }
                 )
             }

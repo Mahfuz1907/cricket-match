@@ -7,6 +7,8 @@ document.getElementById('squad-selected-your').style.display = 'none';
 document.getElementById('squad-selected-oppo').style.display = 'none';
 
 
+
+
 //Color change of the start button
 const letter = '0123456789ABCDEF';
 let colorCode = '#';
