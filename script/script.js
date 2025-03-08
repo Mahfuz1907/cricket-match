@@ -3,6 +3,8 @@ document.getElementById('match-squad').style.display = 'none';
 document.getElementById('match-table').style.display = 'none';
 document.getElementById('match-result').style.display = 'none';
 document.getElementById('select-squad-div').style.display = 'none';
+document.getElementById('squad-selected-your').style.display = 'none';
+document.getElementById('squad-selected-oppo').style.display = 'none';
 
 
 //Color change of the start button

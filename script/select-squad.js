@@ -1,36 +1,16 @@
+let pakistanPlayer2 = [];
+let newZealandPlayer2 = [];
+
 document.getElementById('select-squad').addEventListener("click", 
     function(){
         document.getElementById('match-table').style.display = 'flex';
-        if(isYourIndClicked || isOppoIndClicked){
-            console.log(indianPlayer);
-        }
-        if(isYourSAClicked || isOppoSAClicked){
-            console.log(southAfricanPlayer);
-        }
-        if(isYourAusClicked || isOppoAusClicked){
-            console.log(australianPlayer);
-        }
-        if(isYourNZClicked || isOppoNZClicked){
-            console.log(newZealandPlayer);
-        }
-        if(isYourPakClicked || isOppoPakClicked){
-            console.log(pakistanPlayer);
-        }
-        if(isYourAfgClicked || isOppoAfgClicked){
-            console.log(afghanPlayer);
-        }
-        if(isYourEngClicked || isOppoEngClicked){
-            console.log(englandPlayer);
-        }
-        if(isYourBanClicked || isOppoBanClicked){
-            console.log(bangladeshPlayer);
-        }
-
+        document.getElementById('squad-selected-your').style.display = 'flex';
+        document.getElementById('squad-selected-oppo').style.display = 'flex';
         
         for(let i=0; i < 15; i++){
 
 
-            
+
             if(isYourIndClicked || isOppoIndClicked){
                 document.getElementById(`player-ind-${i}`).addEventListener("click", 
                     function(){
@@ -66,6 +46,8 @@ document.getElementById('select-squad').addEventListener("click",
                 document.getElementById(`player-nz-${i}`).addEventListener("click", 
                     function(){
                         console.log(newZealandPlayer[i]);
+                        newZealandPlayer2.push(newZealandPlayer[i]);
+                        console.log(newZealandPlayer2);
                     }
                 )
             }
@@ -76,6 +58,8 @@ document.getElementById('select-squad').addEventListener("click",
                 document.getElementById(`player-pak-${i}`).addEventListener("click", 
                     function(){
                         console.log(pakistanPlayer[i]);
+                        pakistanPlayer2.push(pakistanPlayer[i]);
+                        console.log(pakistanPlayer2);
                     }
                 )
             }
@@ -110,8 +94,79 @@ document.getElementById('select-squad').addEventListener("click",
                 )
             }
         }
+
+
+
+
+        // let yourTeamTable = document.getElementsByClassName('your-team-table-header');
+        // console.log(yourTeamTable);
+
+        let yourTeamTableBody = document.getElementById('your-team-table-body');
+        let yourTeamTableElement;
+        let yourTeamTableRow = [];
+        for(let i = 0; i < 11; i++){
+            yourTeamTableElement = document.createElement('tr');
+            yourTeamTableElement.id = `your-team-table-element-${i}`;
+            yourTeamTableElement.innerHTML =`
+                                                <td class="cursor-pointer" id="name-of-your-player">
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+            `
+            yourTeamTableBody.appendChild(yourTeamTableElement);
+            yourTeamTableRow.push(yourTeamTableElement.children);
+        }
+
+
+
+        let oppoTeamTableBody = document.getElementById('oppo-team-table-body');
+        let oppoTeamTableElement;
+        let oppoTeamTableRow = [];
+        for(let i = 0; i < 11; i++){
+            oppoTeamTableElement = document.createElement('tr');
+            oppoTeamTableElement.id = `oppo-team-table-element-${i}`;
+            oppoTeamTableElement.innerHTML =`
+                                                <td class="cursor-pointer" id="name-of-oppo-player">
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+            `
+            oppoTeamTableBody.appendChild(oppoTeamTableElement);
+            oppoTeamTableRow.push(oppoTeamTableElement.children);
+        }
+        
+
+        if(isYourPakClicked){
+            for(let i = 0; i < 11; i++){
+                document.getElementById('squad-selected-your').addEventListener("click", 
+                    function(){
+                        document.getElementById(`your-team-table-element-${i}`).children[0].innerHTML = pakistanPlayer2[i];
+                        document.getElementById('squad-selected-your').style.display = 'none';
+                    }
+                )
+            }
+        }
+
+
+        if(isOppoNZClicked){
+            for(let i = 0; i < 11; i++){
+                document.getElementById('squad-selected-oppo').addEventListener("click", 
+                    function(){
+                        document.getElementById(`oppo-team-table-element-${i}`).children[0].innerHTML = newZealandPlayer2[i];
+                        document.getElementById('squad-selected-oppo').style.display = 'none';
+                    }
+                )
+            }
+        }
     }
 )
+
+
+
 
 
 

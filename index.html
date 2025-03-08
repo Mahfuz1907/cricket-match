@@ -225,8 +225,10 @@
 
 
     <!-- select squad button -->
-    <div class="select-squad-div mt-20 flex justify-center items-center" id="select-squad-div">
+    <div class="select-squad-div mt-20 flex justify-center items-center gap-3" id="select-squad-div">
+        <button id="squad-selected-your" class="mt-20 px-7 py-3 cursor-pointer text-xl font-normal border-3 rounded-xl bg-black text-white">Push Your Team</button>
         <button id="select-squad" class="px-7 py-3 cursor-pointer  text-xl font-normal border-3  rounded-xl">Select Squad</button>
+        <button id="squad-selected-oppo" class="mt-20 px-7 py-3 cursor-pointer text-xl font-normal border-3 rounded-xl bg-black text-white">Push Opponent Team</button>
     </div>
 
 
@@ -237,10 +239,10 @@
             <div class="grid grid-cols-3 justify-center items-center gap-5 mt-10">
                 <div class="scorecard col-span-2">
                     <div class="rounded-box overflow-x-hidden border">
-                        <table class="table text-center">
+                        <table class="table text-center" id="your-team-table">
                           <!-- head -->
                           <thead>
-                            <tr>
+                            <tr id="your-team-table-header">
                               <th class="text-white bg-black">Name</th>
                               <th class="text-white bg-black">Run</th>
                               <th class="text-white bg-black">Wicket</th>
@@ -248,95 +250,7 @@
                               <th class="text-white bg-black">Run</th>
                             </tr>
                           </thead>
-                          <tbody>
-                            <!-- row 1 -->
-                            <tr>
-                              <td class="cursor-pointer"></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <!-- row 2 -->
-                            <tr>
-                              <td class="cursor-pointer"></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <!-- row 3 -->
-                            <tr>
-                              <td class="cursor-pointer"></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <!-- row 4 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 5 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 6 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 7 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 8 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 9 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 10 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 11 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                          <tbody id="your-team-table-body">
                           </tbody>
                         </table>
                     </div>
@@ -357,7 +271,7 @@
                                 <option disabled selected>On Strike</option>
                                 <option class="bg-black text-white">Babar Azam</option>
                                 <option class="bg-black text-white">Babar Azam</option>
-                              </select>
+                            </select>
                         </div>
                     </div>
                     <div class="bowl grid grid-cols-3 gap-8 justify-center items-center">
@@ -400,108 +314,20 @@
             <div class="grid grid-cols-3 justify-center items-center gap-5 mt-10">
                 <div class="scorecard col-span-2">
                     <div class="rounded-box overflow-x-hidden border">
-                        <table class="table text-center">
-                          <!-- head -->
-                          <thead>
-                            <tr>
-                              <th class="text-white bg-black">Name</th>
-                              <th class="text-white bg-black">Run</th>
-                              <th class="text-white bg-black">Wicket</th>
-                              <th class="text-white bg-black">Over</th>
-                              <th class="text-white bg-black">Run</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <!-- row 1 -->
-                            <tr>
-                              <td class="cursor-pointer"></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <!-- row 2 -->
-                            <tr>
-                              <td class="cursor-pointer"></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <!-- row 3 -->
-                            <tr>
-                              <td class="cursor-pointer"></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <!-- row 4 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 5 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 6 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 7 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 8 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 9 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 10 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <!-- row 11 -->
-                            <tr>
-                                <td class="cursor-pointer"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <table class="table text-center" id="oppo-team-table">
+                            <!-- head -->
+                            <thead>
+                              <tr id="oppo-team-table-header">
+                                <th class="text-white bg-black">Name</th>
+                                <th class="text-white bg-black">Run</th>
+                                <th class="text-white bg-black">Wicket</th>
+                                <th class="text-white bg-black">Over</th>
+                                <th class="text-white bg-black">Run</th>
+                              </tr>
+                            </thead>
+                            <tbody id="oppo-team-table-body">
+                            </tbody>
+                          </table>
                     </div>
                 </div>
                 <div class="running flex flex-col justify-center items-center gap-10">

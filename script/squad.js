@@ -47,6 +47,9 @@ document.getElementById('your-ind').addEventListener("click",
             player.className = "player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white";
             player.id = `player-ind-${i}`;
             player.innerHTML = ind[i].innerHTML; // Set the player's name
+
+
+
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -79,7 +82,9 @@ document.getElementById('your-sa').addEventListener("click",
             let player = document.createElement('li');
             player.className = "player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white";
             player.id = `player-sa-${i}`;
-            player.innerHTML = sa[i].innerHTML; // Set the player's name
+            player.innerHTML = sa[i].innerHTML;
+
+
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -111,9 +116,10 @@ document.getElementById('your-aus').addEventListener("click",
         squad.id = "player-name-aus";
         for (let i = 0; i < aus.length; i++) {
             let player = document.createElement('li');
-            player.className = "player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white";
+            player.className = "gap-3 player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white";
             player.id = `player-aus-${i}`;
             player.innerHTML = aus[i].innerHTML; // Set the player's name
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -145,9 +151,11 @@ document.getElementById('your-nz').addEventListener("click",
         squad.id = "player-name-nz";
         for (let i = 0; i < nz.length; i++) {
             let player = document.createElement('li');
-            player.className = "player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white";
+            player.className = "gap-3 player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white";
             player.id = `player-nz-${i}`;
             player.innerHTML = nz[i].innerHTML; // Set the player's name
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -181,7 +189,9 @@ document.getElementById('your-pak').addEventListener("click",
             let player = document.createElement('li');
             player.className = "player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white";
             player.id = `player-pak-${i}`;
-            player.innerHTML = pak[i].innerHTML; // Set the player's name
+            player.innerHTML = pak[i].innerHTML;// Set the player's name
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -217,6 +227,8 @@ document.getElementById('your-afg').addEventListener("click",
             player.className = "player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white";
             player.id = `player-afg-${i}`;
             player.innerHTML = afg[i].innerHTML; // Set the player's name
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -252,6 +264,8 @@ document.getElementById('your-eng').addEventListener("click",
             player.className = "player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white";
             player.id = `player-eng-${i}`;
             player.innerHTML = eng[i].innerHTML; // Set the player's name
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -287,6 +301,8 @@ document.getElementById('your-ban').addEventListener("click",
             player.className = "player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white";
             player.id = `player-ban-${i}`;
             player.innerHTML = ban[i].innerHTML; // Set the player's name
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -326,7 +342,9 @@ document.getElementById('oppo-ind').addEventListener("click",
             let player = document.createElement('li');
             player.className = "player-name-ind border border-[#35CAFE] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#35CAFE] hover:text-white";
             player.id = `player-ind-${i}`;
-            player.innerHTML = ind[i].innerHTML; // Set the player's name
+            player.innerHTML = ind[i].innerHTML;
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -366,7 +384,9 @@ document.getElementById('oppo-sa').addEventListener("click",
             let player = document.createElement('li');
             player.className = "player-name-sa border border-[#38761d] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#38761d] hover:text-white";
             player.id = `player-sa-${i}`;
-            player.innerHTML = sa[i].innerHTML; // Set the player's name
+            player.innerHTML = sa[i].innerHTML;
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -404,9 +424,11 @@ document.getElementById('oppo-aus').addEventListener("click",
         squad.id = "player-name-aus";
         for (let i = 0; i < aus.length; i++) {
             let player = document.createElement('li');
-            player.className = "player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white";
+            player.className = "gap-3 player-name-aus border border-[#FFCD00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#FFCD00] hover:text-white";
             player.id = `player-aus-${i}`;
             player.innerHTML = aus[i].innerHTML; // Set the player's name
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -445,9 +467,10 @@ document.getElementById('oppo-nz').addEventListener("click",
         squad.id = "player-name-nz";
         for (let i = 0; i < nz.length; i++) {
             let player = document.createElement('li');
-            player.className = "player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white";
+            player.className = "gap-3 player-name-nz border border-[#000000] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#000000] hover:text-white";
             player.id = `player-nz-${i}`;
             player.innerHTML = nz[i].innerHTML; // Set the player's name
+           
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -488,7 +511,9 @@ document.getElementById('oppo-pak').addEventListener("click",
             let player = document.createElement('li');
             player.className = "player-name-pak border border-[#00ff00] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#00ff00] hover:text-white";
             player.id = `player-pak-${i}`;
-            player.innerHTML = pak[i].innerHTML; // Set the player's name
+            player.innerHTML = pak[i].innerHTML;// Set the player's name
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -531,6 +556,7 @@ document.getElementById('oppo-afg').addEventListener("click",
             player.className = "player-name-afg border border-[#3d85c6] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#3d85c6] hover:text-white";
             player.id = `player-afg-${i}`;
             player.innerHTML = afg[i].innerHTML; // Set the player's name
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -573,6 +599,8 @@ document.getElementById('oppo-eng').addEventListener("click",
             player.className = "player-name-eng border border-[#4a86e8] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#4a86e8] hover:text-white";
             player.id = `player-eng-${i}`;
             player.innerHTML = eng[i].innerHTML; // Set the player's name
+
+           
             squad.appendChild(player); // Append <li> to <ul>
         }
 
@@ -615,6 +643,9 @@ document.getElementById('oppo-ban').addEventListener("click",
             player.className = "player-name-ban border border-[#274e13] cursor-pointer rounded-xl px-5 py-2 hover:bg-[#274e13] hover:text-white";
             player.id = `player-ban-${i}`;
             player.innerHTML = ban[i].innerHTML; // Set the player's name
+
+
+            
             squad.appendChild(player); // Append <li> to <ul>
         }
 
