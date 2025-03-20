@@ -1,0 +1,582 @@
+{
+  "status": true,
+  "message": "successfully fetched all the teams",
+  "teams": [
+    {
+      "id": "team-1",
+      "name": "India",
+      "short_name": "Ind",
+      "team_colour": "#3c78d8",
+      "group": "A",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9O9OaGHrMSyVUyvBThjdylPuQNRSg32Xogg&s",
+      "captain": "Rohit Sharma",
+      "vice_captain": "Shubman Gill",
+      "players": [
+        {
+          "id": "ind-1",
+          "name": "Rohit Sharma"
+        },
+        {
+          "id": "ind-2",
+          "name": "Shubman Gill"
+        },
+        {
+          "id": "ind-3",
+          "name": "Virat Kohli"
+        },
+        {
+          "id": "ind-4",
+          "name": "Shreyas Iyer"
+        },
+        {
+          "id": "ind-5",
+          "name": "Axar Patel"
+        },
+        {
+          "id": "ind-6",
+          "name": "Rishabh Pant"
+        },
+        {
+          "id": "ind-7",
+          "name": "Hardik Pandya"
+        },
+        {
+          "id": "ind-8",
+          "name": "Ravindra Jadeja"
+        },
+        {
+          "id": "ind-9",
+          "name": "Jasprit Bumrah"
+        },
+        {
+          "id": "ind-10",
+          "name": "Mohammad Shami"
+        },
+        {
+          "id": "ind-11",
+          "name": "Kuldeep Yadav"
+        },
+        {
+          "id": "ind-12",
+          "name": "KL Rahul"
+        },
+        {
+          "id": "ind-13",
+          "name": "Mohammad Siraj"
+        },
+        {
+          "id": "ind-14",
+          "name": "Varun Chakrabarty"
+        },
+        {
+          "id": "ind-15",
+          "name": "Yashasbhi Jaisual"
+        }
+      ]
+    },
+    {
+      "id": "team-2",
+      "name": "South Africa",
+      "short_name": "SA",
+      "team_colour": "#38761d",
+      "group": "B",
+      "image": "https://wallpapers.com/images/hd/south-africa-cricket-logo-in-green-r8yby4whwfax0t6o.jpg",
+      "captain": "Temba Bavuma",
+      "vice_captain": "Aiden Markram",
+      "players": [
+        {
+          "id": "sa-1",
+          "name": "Ryan Rickelton (wk)"
+        },
+        {
+          "id": "sa-2",
+          "name": "Temba Bavuma"
+        },
+        {
+          "id": "sa-3",
+          "name": "Rassie van der Dussen"
+        },
+        {
+          "id": "sa-4",
+          "name": "Aiden Markram"
+        },
+        {
+          "id": "sa-5",
+          "name": "Heinrich Klassen"
+        },
+        {
+          "id": "sa-6",
+          "name": "David Miller"
+        },
+        {
+          "id": "sa-7",
+          "name": "Marco Jansen"
+        },
+        {
+          "id": "sa-8",
+          "name": "Keshav Maharaj"
+        },
+        {
+          "id": "sa-9",
+          "name": "Kagiso Rabada"
+        },
+        {
+          "id": "sa-10",
+          "name": "Lungi Ngidi"
+        },
+        {
+          "id": "sa-11",
+          "name": "Tabraiz Shamsi"
+        },
+        {
+          "id": "sa-12",
+          "name": "Tony de Zorzi"
+        },
+        {
+          "id": "sa-13",
+          "name": "Wiaan Mulder"
+        },
+        {
+          "id": "sa-14",
+          "name": "Tristan Stubbs"
+        },
+        {
+          "id": "sa-15",
+          "name": "Corbin Bosch"
+        }
+      ]
+    },
+    {
+      "id": "team-3",
+      "name": "Australia",
+      "short_name": "Aus",
+      "team_colour": "#ffff00",
+      "group": "A",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROGc7HnLogOfp8Z_HAAZYPGx36V0pUvSfmDA&s",
+      "captain": "Pat Cummins",
+      "vice_captain": "Steven Smith",
+      "players": [
+        {
+          "id": "aus-1",
+          "name": "Travis Head"
+        },
+        {
+          "id": "aus-2",
+          "name": "Mathew Short"
+        },
+        {
+          "id": "aus-3",
+          "name": "Steven Smith (vc)"
+        },
+        {
+          "id": "aus-4",
+          "name": "Marnus Labuschagne"
+        },
+        {
+          "id": "aus-5",
+          "name": "Josh Inglish (wk)"
+        },
+        {
+          "id": "aus-6",
+          "name": "Alex Carey (wk)"
+        },
+        {
+          "id": "aus-7",
+          "name": "Glenn Maxewell"
+        },
+        {
+          "id": "aus-8",
+          "name": "Pat Cummins (c)"
+        },
+        {
+          "id": "aus-9",
+          "name": "Mitchell Starc"
+        },
+        {
+          "id": "aus-10",
+          "name": "Josh Hazlewood"
+        },
+        {
+          "id": "aus-11",
+          "name": "Adam Zampa"
+        },
+        {
+          "id": "aus-12",
+          "name": "Jake Fraser-McGurk"
+        },
+        {
+          "id": "aus-13",
+          "name": "Marcus Stoinis"
+        },
+        {
+          "id": "aus-14",
+          "name": "Sean Abott"
+        },
+        {
+          "id": "aus-15",
+          "name": "Tanveer Sangha"
+        }
+      ]
+    },
+    {
+      "id": "team-4",
+      "name": "New Zealand",
+      "short_name": "NZ",
+      "team_colour": "#000000",
+      "group": "B",
+      "image": "https://wallpapers.com/images/hd/new-zealand-cricket-fern-leaf-logo-yp485fkm0a10v020.jpg",
+      "captain": "Mitchell Santner",
+      "vice_captain": "Michael Bracewell",
+      "players": [
+        {
+          "id": "nz-1",
+          "name": "Will Young"
+        },
+        {
+          "id": "nz-2",
+          "name": "Rachin Ravindra"
+        },
+        {
+          "id": "nz-3",
+          "name": "Kane Williamson "
+        },
+        {
+          "id": "nz-4",
+          "name": "Daryl Mitchell"
+        },
+        {
+          "id": "nz-5",
+          "name": "Tom Latham"
+        },
+        {
+          "id": "nz-6",
+          "name": "Glen Phillips"
+        },
+        {
+          "id": "nz-7",
+          "name": "Michael Bracewell"
+        },
+        {
+          "id": "nz-8",
+          "name": "Mitchell Santner"
+        },
+        {
+          "id": "nz-9",
+          "name": "Matt Henry"
+        },
+        {
+          "id": "nz-10",
+          "name": "Jacob Duffy"
+        },
+        {
+          "id": "nz-11",
+          "name": "Lukie Ferguson"
+        },
+        {
+          "id": "nz-12",
+          "name": "Kyle Jamieson"
+        },
+        {
+          "id": "nz-13",
+          "name": "Jimmy Neesham"
+        },
+        {
+          "id": "nz-14",
+          "name": "Ish Sodi"
+        },
+        {
+          "id": "nz-15",
+          "name": "Devon Conway"
+        }
+      ]
+    },
+    {
+      "id": "team-5",
+      "name": "Pakistan",
+      "short_name": "Pak",
+      "team_colour": "#00ff00",
+      "group": "A",
+      "image": "https://wallpapers.com/images/featured/pakistan-cricket-1lpbimloa9feicvt.jpg",
+      "captain": "Mohammad Rizwan",
+      "vice_captain": "Salman Ali Agha",
+      "players": [
+        {
+          "id": "pak-1",
+          "name": "Fakhar Zaman"
+        },
+        {
+          "id": "pak-2",
+          "name": "Saim Ayub"
+        },
+        {
+          "id": "pak-3",
+          "name": "Babar Azam"
+        },
+        {
+          "id": "pak-4",
+          "name": "Mohammad Rizwan"
+        },
+        {
+          "id": "pak-5",
+          "name": "Salman Ali Agha"
+        },
+        {
+          "id": "pak-6",
+          "name": "Shadab Khan"
+        },
+        {
+          "id": "pak-7",
+          "name": "Irfan Niazi"
+        },
+        {
+          "id": "pak-8",
+          "name": "Shaheen Afridi"
+        },
+        {
+          "id": "pak-9",
+          "name": "Naseem Shah"
+        },
+        {
+          "id": "pak-10",
+          "name": "Haris Rauf"
+        },
+        {
+          "id": "pak-11",
+          "name": "Abrar Ahmed"
+        },
+        {
+          "id": "pak-12",
+          "name": "Abdullah Shafique"
+        },
+        {
+          "id": "pak-13",
+          "name": "Mohammad Hasnain"
+        },
+        {
+          "id": "pak-14",
+          "name": "Aamer Jamal"
+        },
+        {
+          "id": "pak-15",
+          "name": "Sufiyan Muqeem"
+        }
+      ]
+    },
+    {
+      "id": "team-6",
+      "name": "Afghanistan",
+      "short_name": "Afg",
+      "team_colour": "#3d85c6",
+      "group": "B",
+      "image": "https://www.newagebd.com/files/records/news/202306/203810_122.jpg",
+      "captain": "Hasmatullah Sahidi",
+      "vice_captain": "Rashid Khan",
+      "players": [
+        {
+          "id": "afg-1",
+          "name": "Rahmanullah Gurbaz"
+        },
+        {
+          "id": "afg-2",
+          "name": "Ibrahim Zadran"
+        },
+        {
+          "id": "afg-3",
+          "name": "Sediqullah Atal"
+        },
+        {
+          "id": "afg-4",
+          "name": "Rahmat Shah"
+        },
+        {
+          "id": "afg-5",
+          "name": "Hasmatullah Sahidi"
+        },
+        {
+          "id": "afg-6",
+          "name": "Azmatullah Omarzai"
+        },
+        {
+          "id": "afg-7",
+          "name": "Mohammad Nabi "
+        },
+        {
+          "id": "afg-8",
+          "name": "Gulbadin Naib"
+        },
+        {
+          "id": "afg-9",
+          "name": "Rashid Khan"
+        },
+        {
+          "id": "afg-10",
+          "name": "Mujeeb Ur Rahman "
+        },
+        {
+          "id": "afg-11",
+          "name": "Fazlehaq Farooqi"
+        },
+        {
+          "id": "afg-12",
+          "name": "Naveen ul Haque"
+        },
+        {
+          "id": "afg-13",
+          "name": "AM Ghazanfar"
+        },
+        {
+          "id": "afg-14",
+          "name": "Noor Ahmed"
+        },
+        {
+          "id": "afg-15",
+          "name": "Ikram Alikhil"
+        }
+      ]
+    },
+    {
+      "id": "team-7",
+      "name": "England",
+      "short_name": "Eng",
+      "team_colour": "#4a86e8",
+      "group": "A",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK8Lbe9YXOioIaKUbfkSpSgAdrxf9cHdIBJw&s",
+      "captain": "Jos Buttler",
+      "vice_captain": "Ben Duckett",
+      "players": [
+        {
+          "id": "eng-1",
+          "name": "Philip Salt"
+        },
+        {
+          "id": "eng-2",
+          "name": "Ben Duckett"
+        },
+        {
+          "id": "eng-3",
+          "name": "Jamie Smith"
+        },
+        {
+          "id": "eng-4",
+          "name": "Joe Root"
+        },
+        {
+          "id": "eng-5",
+          "name": "Harry Brook"
+        },
+        {
+          "id": "eng-6",
+          "name": "Jos Buttler"
+        },
+        {
+          "id": "eng-7",
+          "name": "Liam Livingstone"
+        },
+        {
+          "id": "eng-8",
+          "name": "Jamie Overton"
+        },
+        {
+          "id": "eng-9",
+          "name": "Jofra Archer"
+        },
+        {
+          "id": "eng-10",
+          "name": "Mark Wood"
+        },
+        {
+          "id": "eng-11",
+          "name": "Adil Rashid"
+        },
+        {
+          "id": "eng-12",
+          "name": "Tom Banton"
+        },
+        {
+          "id": "eng-13",
+          "name": "Gus Atkinson"
+        },
+        {
+          "id": "eng-14",
+          "name": "Saqib Mahmood"
+        },
+        {
+          "id": "eng-15",
+          "name": "Rehan Ahmed"
+        }
+      ]
+    },
+    {
+      "id": "team-8",
+      "name": "Bangladesh",
+      "short_name": "Ban",
+      "team_colour": "#274e13",
+      "group": "B",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlqO2ESgR6Oui-BVzP4OGrOrh7ckpYtKRqQ&s",
+      "captain": "Najmul Hossain Shanto",
+      "vice_captain": "Mehidy Hasan Miraz",
+      "players": [
+        {
+          "id": "ban-1",
+          "name": "Tanzid Tamim"
+        },
+        {
+          "id": "ban-2",
+          "name": "Najmul Hossain Shanto"
+        },
+        {
+          "id": "ban-3",
+          "name": "Mehidy Hasan Miraz"
+        },
+        {
+          "id": "ban-4",
+          "name": "Towhid Hridoy"
+        },
+        {
+          "id": "ban-5",
+          "name": "Mahmudullah Reyad"
+        },
+        {
+          "id": "ban-6",
+          "name": "Mushfiqur Rahim"
+        },
+        {
+          "id": "ban-7",
+          "name": "Jaker Ali"
+        },
+        {
+          "id": "ban-8",
+          "name": "Rishad Hossain"
+        },
+        {
+          "id": "ban-9",
+          "name": "Taskin Ahmed"
+        },
+        {
+          "id": "ban-10",
+          "name": "Mustafizur Rahman "
+        },
+        {
+          "id": "ban-11",
+          "name": "Nahid Rana"
+        },
+        {
+          "id": "ban-12",
+          "name": "Ebadot Hossain"
+        },
+        {
+          "id": "ban-13",
+          "name": "Tanzim Hasan Sakib"
+        },
+        {
+          "id": "ban-14",
+          "name": "Hassan Mahmud"
+        },
+        {
+          "id": "ban-15",
+          "name": "Litton Das"
+        }
+      ]
+    }
+  ]
+}
