@@ -1,7 +1,11 @@
 document.getElementById("select-team-button").classList.add("hidden");
+document.getElementById("confirm-div").classList.add("hidden");
 
 const selectTeamButton = () => {
   document.getElementById("select-team-button").classList.remove("hidden");
+  document.getElementById("confirm-div").classList.remove("hidden");
+  document.getElementById("start-div").classList.add("hidden");
+  document.getElementById("team-button").classList.add("hidden");
 
   loaderSelectTeamActive();
   fetch("../api/squads.json")

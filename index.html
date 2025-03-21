@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +28,7 @@
     </style>
   </head>
 
-  <body class="p-20 gidole">
+  <body class="p-10 md:p-20 gidole">
     <!-- Open the modal using ID.showModal() method -->
     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
       <form method="dialog" class="modal-backdrop">
@@ -43,7 +43,7 @@
     ></div>
 
     <!-- start match button -->
-    <div class="flex justify-center items-center mt-32">
+    <div id="start-div" class="flex justify-center items-center mt-32">
       <button
         id="start-match"
         class="btn btn-outline btn-accent text-xl"
@@ -79,7 +79,7 @@
     <!-- select team -->
     <div
       id="select-team-button"
-      class="mt-24 grid grid-cols-1 gap-10 sm:grid-cols-2"
+      class="mt-24 grid grid-cols-1 gap-10 md:grid-cols-2"
     >
       <div class="team-1 flex flex-col justify-center items-center gap-5">
         <h1 class="text-xl font-extrabold text-[#131313]">Select Team 1</h1>
@@ -93,7 +93,7 @@
     </div>
 
     <!-- confirm team button -->
-    <div class="flex justify-center items-center mt-32">
+    <div id="confirm-div" class="flex justify-center items-center mt-32">
       <button
         onclick="selectTeam()"
         id="confirm-team"
@@ -104,16 +104,22 @@
     </div>
 
     <!-- team vs team -->
-    <div class="grid grid-cols-3 gap-10 justify-center items-center mt-20">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9O9OaGHrMSyVUyvBThjdylPuQNRSg32Xogg&s"
-        alt=""
-      />
-      <p class="text-9xl font-black text-center">VS</p>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9O9OaGHrMSyVUyvBThjdylPuQNRSg32Xogg&s"
-        alt=""
-      />
+    <div
+      id="teamVsTeam"
+      class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-between items-center mt-20 mx-auto"
+    ></div>
+
+    <!-- score table -->
+    <div
+      class="score-card flex flex-col justify-center items-center gap-10 mt-20"
+    >
+      <div
+        class="score-table flex flex-col justify-between items-center gap-10"
+      >
+        <div id="score-team-1" class="score-team-1"></div>
+        <div id="score-team-2" class="score-team-2"></div>
+      </div>
+      <div class="running-score"></div>
     </div>
 
     <script src="script/team-button.js"></script>
@@ -121,5 +127,6 @@
     <script src="script/loader.js"></script>
     <script src="script/group.js"></script>
     <script src="script/teamVSTeam.js"></script>
+    <script src="script/finalSquad.js"></script>
   </body>
 </html>
