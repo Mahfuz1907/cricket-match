@@ -40,14 +40,57 @@
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-between items-center gap-14"
     ></div>
 
+    <!-- start match button -->
     <div class="flex justify-center items-center mt-32">
       <button
-        class="bg-[#474646] text-white rounded-lg px-5 py-2 cursor-pointer"
+        id="start-match"
+        class="btn btn-outline btn-accent text-xl"
+        onclick="selectTeamButton()"
       >
         Start Match
       </button>
     </div>
 
+    <div class="group-team mt-20">
+      <table class="table lg:mx-auto text-center">
+        <thead class="text-xl font-bold">
+          <th>Group</th>
+          <th colspan="4">Teams</th>
+        </thead>
+        <tbody>
+          <tr id="group-A" class="text-lg font-bold">
+            <td>A</td>
+          </tr>
+          <tr id="group-B" class="text-lg font-bold">
+            <td>B</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- select team -->
+    <div
+      id="select-team-button"
+      class="mt-24 grid grid-cols-1 gap-10 sm:grid-cols-2"
+    >
+      <div class="team-1 flex flex-col justify-center items-center gap-5">
+        <h1 class="text-xl font-extrabold text-[#131313]">Select Team 1</h1>
+
+        <div id="team-1-button" class="grid grid-cols-2 gap-5"></div>
+      </div>
+      <div class="team-2 flex flex-col justify-center items-center gap-5">
+        <h1 class="text-xl font-extrabold text-[#131313]">Select Team 2</h1>
+        <div id="team-2-button" class="grid grid-cols-2 gap-5"></div>
+      </div>
+    </div>
+
+    <!-- select team loader -->
+    <div id="loader-select-team-button" class="text-center mt-20 hidden">
+      <span class="loading loading-bars loading-xl text-success"></span>
+    </div>
+
     <script src="script/team-button.js"></script>
+    <script src="script/select-team-button.js"></script>
+    <script src="script/loader.js"></script>
+    <script src="script/group.js"></script>
   </body>
 </html>

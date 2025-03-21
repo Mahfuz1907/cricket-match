@@ -1,6 +1,7 @@
 {
   "status": true,
   "message": "successfully fetched all the teams",
+  "tournament_id": "ct-25",
   "teams": [
     {
       "id": "team-1",
@@ -66,7 +67,7 @@
         },
         {
           "id": "ind-14",
-          "name": "Varun Chakrabarty"
+          "name": "Arshdeep Singh"
         },
         {
           "id": "ind-15",
