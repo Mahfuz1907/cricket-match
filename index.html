@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CT 2025</title>
     <link type="image/png" sizes="16x16" rel="icon" href="assets/logo.png" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -51,7 +53,13 @@
       </button>
     </div>
 
-    <div class="group-team mt-20">
+    <!-- select team loader -->
+    <div id="loader-select-team-button" class="text-center mt-20 hidden">
+      <span class="loading loading-bars loading-xl text-success"></span>
+    </div>
+
+    <!-- group -->
+    <div id="group" class="group-team mt-20 hidden">
       <table class="table lg:mx-auto text-center">
         <thead class="text-xl font-bold">
           <th>Group</th>
@@ -67,6 +75,7 @@
         </tbody>
       </table>
     </div>
+
     <!-- select team -->
     <div
       id="select-team-button"
@@ -75,22 +84,42 @@
       <div class="team-1 flex flex-col justify-center items-center gap-5">
         <h1 class="text-xl font-extrabold text-[#131313]">Select Team 1</h1>
 
-        <div id="team-1-button" class="grid grid-cols-2 gap-5"></div>
+        <div id="team-first-button" class="grid grid-cols-2 gap-5"></div>
       </div>
       <div class="team-2 flex flex-col justify-center items-center gap-5">
         <h1 class="text-xl font-extrabold text-[#131313]">Select Team 2</h1>
-        <div id="team-2-button" class="grid grid-cols-2 gap-5"></div>
+        <div id="team-second-button" class="grid grid-cols-2 gap-5"></div>
       </div>
     </div>
 
-    <!-- select team loader -->
-    <div id="loader-select-team-button" class="text-center mt-20 hidden">
-      <span class="loading loading-bars loading-xl text-success"></span>
+    <!-- confirm team button -->
+    <div class="flex justify-center items-center mt-32">
+      <button
+        onclick="selectTeam()"
+        id="confirm-team"
+        class="btn btn-outline btn-accent text-xl"
+      >
+        Confirm Team
+      </button>
+    </div>
+
+    <!-- team vs team -->
+    <div class="grid grid-cols-3 gap-10 justify-center items-center mt-20">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9O9OaGHrMSyVUyvBThjdylPuQNRSg32Xogg&s"
+        alt=""
+      />
+      <p class="text-9xl font-black text-center">VS</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9O9OaGHrMSyVUyvBThjdylPuQNRSg32Xogg&s"
+        alt=""
+      />
     </div>
 
     <script src="script/team-button.js"></script>
     <script src="script/select-team-button.js"></script>
     <script src="script/loader.js"></script>
     <script src="script/group.js"></script>
+    <script src="script/teamVSTeam.js"></script>
   </body>
 </html>
