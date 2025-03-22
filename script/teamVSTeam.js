@@ -100,10 +100,8 @@ const selectTeam = () => {
               <tr>
                 <th>Name</th>
                 <th>Run Scored</th>
-                <th>Bowl Taken</th>
                 <th>Wicket</th>
                 <th>Over Bowled</th>
-                <th>Run Conceded</th>
               </tr>
             </thead>
             <tbody id="final-table-team-1"></tbody>`;
@@ -112,10 +110,8 @@ const selectTeam = () => {
               <tr>
                 <th>Name</th>
                 <th>Run Scored</th>
-                <th>Bowl Taken</th>
                 <th>Wicket</th>
                 <th>Over Bowled</th>
-                <th>Run Conceded</th>
               </tr>
             </thead>
             <tbody id="final-table-team-2"></tbody>`;

@@ -1,5 +1,3 @@
-let finalSquad1 = [];
-let finalSquad2 = [];
 let i1 = 0,
   i2 = 0;
 
@@ -20,10 +18,8 @@ const finalXI1 = (squad) => {
       player: `player${i1}`,
       name: squad.name,
       runScored: "",
-      bowlTaken: "",
       wicket: "",
       overBowled: "",
-      runConceded: "",
     });
 
     let eachRow = document.createElement("tr");
@@ -51,10 +47,8 @@ const finalXI2 = (squad) => {
       player: `player${i2}`,
       name: squad.name,
       runScored: "",
-      bowlTaken: "",
       wicket: "",
       overBowled: "",
-      runConceded: "",
     });
 
     let eachRow = document.createElement("tr");

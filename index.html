@@ -25,6 +25,11 @@
       .gidole {
         font-family: "Gidole", sans-serif;
       }
+
+      .landscape-table {
+        transform: rotate(90deg);
+        transform-origin: left top;
+      }
     </style>
   </head>
 
@@ -110,16 +115,186 @@
     ></div>
 
     <!-- score table -->
-    <div
-      class="score-card flex flex-col justify-center items-center gap-10 mt-20"
-    >
-      <div
-        class="score-table flex flex-col justify-between items-center gap-10"
-      >
-        <div id="score-team-1" class="score-team-1"></div>
-        <div id="score-team-2" class="score-team-2"></div>
+    <div class="score-table flex flex-col justify-end items-end gap-10">
+      <div id="score-team-1" class="score-team-1"></div>
+      <div id="score-team-2" class="score-team-2"></div>
+    </div>
+
+    <!-- running score -->
+    <div class="running-score flex flex-col justify-center items-center gap-10">
+      <div class="bat flex flex-row justify-center items-center gap-10">
+        <div class="strike">
+          <form action="" class="flex flex-col gap-3">
+            <div>
+              <label for="number">Fakhar Zaman</label>
+              <input
+                type="number"
+                class="w-14 rounded-lg border-green-500 text-center text-green-500"
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+              >
+                Enter
+              </button>
+              <button
+                type="reset"
+                class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="non-strike">
+          <form action="" class="flex flex-col gap-3">
+            <div>
+              <label for="number">Fakhar Zaman</label>
+              <input
+                type="number"
+                class="w-14 rounded-lg border-green-500 text-center text-green-500"
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+              >
+                Enter
+              </button>
+              <button
+                type="reset"
+                class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="running-score"></div>
+      <div class="bowl">
+        <form action="" class="flex flex-col gap-3">
+          <div>
+            <label for="number">Shaheen</label>
+            <input
+              type="number"
+              class="w-14 rounded-lg border-green-500 text-center text-green-500"
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Enter
+            </button>
+            <button
+              type="reset"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="score flex flex-row gap-5 justify-center items-center">
+        <form action="" class="flex flex-col gap-3">
+          <div>
+            <label for="number">Over</label>
+            <input
+              type="number"
+              class="w-14 rounded-lg border-green-500 text-center text-green-500"
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Enter
+            </button>
+            <button
+              type="reset"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+        <form class="flex flex-col gap-3">
+          <div class="flex flex-row gap-3">
+            <h1>Bowl</h1>
+            <button
+              class="w-14 rounded-lg border-[1px] border-green-500 text-center text-green-500 px-3 py-1"
+            >
+              1
+            </button>
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Enter
+            </button>
+            <button
+              type="reset"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+        <form class="flex flex-col gap-3">
+          <div class="flex flex-row gap-3">
+            <h1>Wicket</h1>
+            <button
+              class="w-14 rounded-lg border-[1px] border-green-500 text-center text-green-500 px-3 py-1"
+            >
+              1
+            </button>
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Enter
+            </button>
+            <button
+              type="reset"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+        <form action="" class="flex flex-col gap-3">
+          <div>
+            <label for="number">Run</label>
+            <input
+              type="number"
+              class="w-14 rounded-lg border-green-500 text-center text-green-500"
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Enter
+            </button>
+            <button
+              type="reset"
+              class="bg-green-500 hover:bg-white hover:border-[1px] hover:border-green-500 text-base font-bold text-white hover:text-green-500 px-3 py-1 rounded-lg cursor-pointer"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="script/team-button.js"></script>
@@ -128,5 +303,6 @@
     <script src="script/group.js"></script>
     <script src="script/teamVSTeam.js"></script>
     <script src="script/finalSquad.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
